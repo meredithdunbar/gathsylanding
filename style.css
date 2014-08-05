@@ -1,0 +1,263 @@
+/* === General Styles === */
+
+#header-bar {
+    background-color: #000000;
+    border-bottom: 1px solid #191919;
+    height: 53px;
+    line-height: 53px;
+    margin-bottom: 1px;
+    z-index: 100;
+}
+#header-bar a.site-loopback {
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    margin-left: -10px;
+    margin-top: 1px;
+    text-indent: -9999px;
+}
+#header-bar .a3docean-preview-logo {
+    background-image: url("http://0.envato-static.com/images/common/preview-logos/3docean-purchasethis.png?1315975390");
+    height: 52px;
+    width: 270px;
+}
+#header-bar .aactiveden-preview-logo {
+    background-image: url("http://3.envato-static.com/images/common/preview-logos/activeden-purchasethis.png?1315975390");
+    height: 52px;
+    width: 270px;
+}
+#header-bar .athemeforest-preview-logo {
+    background-image: url("http://3.envato-static.com/images/common/preview-logos/themeforest-purchasethis.png?1315975390");
+    height: 52px;
+    width: 270px;
+}
+#header-bar .acodecanyon-preview-logo {
+    background-image: url("http://0.envato-static.com/images/common/preview-logos/codecanyon-purchasethis.png?1315975390");
+    height: 52px;
+    width: 270px;
+}
+#header-bar .atutsmarketplace-preview-logo {
+    background-image: url("http://1.envato-static.com/images/common/preview-logos/tutsmarketplace-purchasethis.png?1315975390");
+    height: 52px;
+    width: 270px;
+}
+#header-bar p.meta-data {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#header-bar p.meta-data p {
+    display: inline;
+    margin: 0;
+}
+#header-bar p.meta-data a {
+    color: #6E6E6E;
+    text-decoration: none;
+}
+#header-bar p.meta-data a.purchase {
+    border-left: 1px solid #6E6E6E;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+#header-bar p.meta-data a:hover, #header-bar p.meta-data a.activated {
+    color: #FFFFFF;
+}
+#header-bar span.preview {
+    background: url("http://1.envato-static.com/images/activeden/right-slide.png?1311218483") no-repeat scroll 0 1px transparent;
+    color: #D2D1D0;
+    display: none;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#header-bar div.close-header {
+    float: left;
+    height: 52px;
+    margin-left: 5px;
+    width: 40px;
+}
+#header-bar div.close-header a#close-button {
+    background-image: url("http://2.envato-static.com/images/common/icons-buttons/button.gif?1311218500");
+    background-repeat: no-repeat;
+    border: 1px solid #545454;
+    display: block;
+    height: 16px;
+    margin: 17px auto 0;
+    text-indent: -9999px;
+    width: 16px;
+}
+#header-bar div.close-header a#close-button:hover, #header-bar div.close-header a#close-button.activated {
+    background-position: 0 -16px;
+}
+#preview-frame {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+html, body{
+	margin: 0 auto;
+}
+
+a, a:link, a:hover, a:visited{
+	text-decoration: none;
+}
+
+body{
+	min-width: 1100px;
+	font-family: 'Open Sans' sans-serif;
+	overflow: hidden;
+}
+
+#intro{
+	width: 100%;
+	background-color: #ffffff;
+	height: 4000px;
+}
+
+/* === Left Sidebar === */
+
+#left-picture{
+	width: 35%;
+	height: 100vh !important;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-color: #33ccff;
+}
+
+/* === Right Content === */
+
+p.big{
+	font-weight: 800;
+	font-size: 60px;
+	color: #3e3f43;
+	text-align: right;
+	line-height: 80px;
+
+	margin-right: 10px;
+	margin-bottom: -37px;
+}
+
+span.big{
+	background-color: #ffffff;
+	padding: 0 25px 10px 25px;
+}
+
+#right-content{
+	width: 65%;
+	position: relative;
+	float: right;
+}
+
+.button{
+	font-size: 20px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 50px;
+	letter-spacing: 0px;
+	position: relative;
+	text-align: center;
+	border: 4px solid #ffffff;
+	width: 190px;
+	height: 50px;
+	text-transform: uppercase;
+
+	-o-transition:.2s;
+  	-ms-transition:.2s;
+  	-moz-transition:.2s;
+  	-webkit-transition:.2s;
+  	/* ...and now for the proper property */
+  	transition:.2s;
+}
+
+	.button:hover{
+		background-color: #ffffff;
+		color: #33ccff;
+	}
+
+p.header{
+	font-weight: 300;
+	font-size: 24px;
+	color: #33ccff;
+	text-align: left;
+}
+
+p.sub{
+	font-weight: 300;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#half{
+	width: 50%;
+	height: 100vh;
+	position: relative;
+	float: left;
+}
+
+.round-it-med{
+	font-size: 18px;
+	font-weight: 300;
+	color: #ffffff;
+	line-height: 43px;
+	letter-spacing: 0px;
+	position: relative;
+	float: left;
+	text-align: center;
+	border: 1px solid #33ccff;
+	border-radius: 25px;
+	width: auto;
+	height: 45px;
+	background-color: #33ccff;
+
+	padding: 0 30px 0 30px;
+
+	-o-transition:.2s;
+  	-ms-transition:.2s;
+  	-moz-transition:.2s;
+  	-webkit-transition:.2s;
+  	/* ...and now for the proper property */
+  	transition:.2s;
+}
+
+	.round-it-med:hover{
+		background-color: #ffffff;
+		color: #33ccff;
+		border: 1px solid #33ccff;
+	}
+
+.round-it-social{
+	font-size: 18px;
+	font-weight: 300;
+	color: #33ccff;
+	line-height: 43px;
+	letter-spacing: 0px;
+	position: relative;
+	float: left;
+	text-align: center;
+	border: 1px solid #33ccff;
+	border-radius: 25px;
+	width: auto;
+	height: 45px;
+
+	padding: 0 10px 0 10px;
+	margin-left: 5px;
+
+	-o-transition:.2s;
+  	-ms-transition:.2s;
+  	-moz-transition:.2s;
+  	-webkit-transition:.2s;
+  	/* ...and now for the proper property */
+  	transition:.2s;
+}
+
+	.round-it-social:hover{
+		background-color: #33ccff;
+		color: #ffffff;
+		border: 1px solid #33ccff;
+	}

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Breakfast Documentation | Meatless Design</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Breakfast&rdquo; Documentation by &ldquo;Meatless Design&rdquo; v1.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Breakfast&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: March 17, 2014<br>
+					Updated: April 7, 2014<br>
+					By: Robert Finch<br>
+					Help: <a href="http://meatless.zendesk.com">Dedicated Support Forum</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please <a href="http://meatless.zendesk.com">visit the official Meatless Support Forum.</a> Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a liquid layout with two columns. All of the information within the main content area is nested within a div with an id of "intro". The left column's content is nested within a div with an id of "left-picture". The right column's content is nested within a div with an id of "right-content".</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		<br /><br />
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#left-content {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	#intro {
+		color: #someColor;
+	}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours. <strong>In addition, you can also do a find and replace in any text editor. Replace the current hex color code of #33ccff with the hex color code of your choice.</strong><br /><br />You can find your hex color code at <a href="http://www.colorhexa.com/">ColorHexa</a>.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using multiple CSS files in this theme. The only one you need to worry about is the main "style.css" file in the base directory. All other CSS files are things that should not be changed, like FontAwesome's font icon integration that enables us to generate social icons with CSS.</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	/* === Left Sidebar === */
+
+	some code
+
+	/* === Right Content === */
+	
+	some code
+	
+</pre>
+		
+		<p>To enable your images to be retina ready, simply add a duplicate file of your image that is twice the size and add "@2x" before the file extension. Example:</p>
+
+		<pre>logo.png</pre>
+
+		<p>gets duplicated at double the size and is called...</p>
+
+		<pre>logo@2x.png</pre>
+
+		<p>The site does the rest of the work for you!</p>
+
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>The logo you use inside the left content can be replaced by simpling replacing the "logo.png" file in the "img" folder. You can easiliy add different social icons to the right content section by switching out the FontAwesome icon names. You can learn more about FontAwesome <a href="http://fontawesome.io/">on their website</a>.</p>
+
+		<p>The CSS animations used are open-source and are from <a href="http://www.justinaguilar.com/animations/index.html#">Justin Aguilar</a>. You can easily edit the animations by switching out the id of the div with a new div id. For example, you can change the div id of "bigEntrance" to the div id of "pulse" or any other div id name on the <a href="http://www.justinaguilar.com/animations/index.html#">CSS animations example website</a>.
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript / Additional CSS</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports two main JavaScript / Additional CSS files and one built-in JavaScript function in the file "index.html".</p>
+		
+		<ol>
+			<li>jQuery </li>
+			<li>Custom JavaScript (Built-in to "index.html" file.)</li>
+			<li>Normalize (CSS)</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>In the "index.html" file, you will find two main scripts. These scripts center the logo in the left hand column and the content in the right column.
+			</li>
+			<li>Normalize is a CSS framework that resets default content for all browsers. This ensures the page looks the same in every browser.
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li><a href="http://fontawesome.io/">FontAwesome from Dave Gandy</a></li>
+			<li><a href="http://www.justinaguilar.com/animations/index.html#">CSS3 Animation Cheat Sheet from Justin Aguilar</a></li>
+			<li><a href="http://necolas.github.io/normalize.css/">Normalize from Nicolas Gallagher</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this Meatless theme. If you have any questions, please open a ticket on our <a href="http://meatless.zendesk.com">Dedicated Support Forum</a>.</p> 
+		
+		<p class="append-bottom alt large"><strong>Robert Finch</strong><br />Learn more about <a href="http://meatless.io/">Meatless Design</a></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
